@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_user_default"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matt Chen"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 day ago"
+        android:textSize="12sp"
+        android:textColor="@color/hint"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:text="Yes, you are simply looking to contain both elements in a vertical LinearLayout which has android:gravity set to center_horizontal."
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_below="@id/content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_icon"
+        android:layout_marginBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/image"
+        android:background="@color/divider" />
+</RelativeLayout>

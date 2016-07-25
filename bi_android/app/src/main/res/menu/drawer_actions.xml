@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/campaigns_menu_item"-->
+        <!--android:icon="@drawable/ic_pool_disabled"-->
+        <!--android:title="@string/campaigns_title" />-->
+
+    <item
+        android:id="@+id/my_campaigns_menu_item"
+        android:icon="@drawable/ic_favorite_disabled"
+        android:title="@string/my_campaign_title" />
+
+    <item
+        android:id="@+id/withdraw_menu_item"
+        android:icon="@drawable/achievements_gray"
+        android:title="@string/withdraw_title" />
+
+</menu>

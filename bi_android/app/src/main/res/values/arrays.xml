@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_types">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="picture_types">
+        <item>Album</item>
+        <item>Camera</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item>Fashion</item>
+        <item>Technology</item>
+        <item>Gaming</item>
+        <item>Mobile</item>
+        <item>Applications</item>
+    </string-array>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+</resources>
