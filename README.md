@@ -1,6 +1,6 @@
 # Android Project
 
-An Android project that created by MVP architecture and BI APIs.
+An Android project that created by MVP architecture and BI APIs. Still working on this project.
 
 ## Sample
 
