@@ -14,8 +14,6 @@ public interface LoginContract {
 
         void showMessage(String message);
 
-        void showSignUp();
-
         void showCampaigns();
     }
 
@@ -23,9 +21,6 @@ public interface LoginContract {
 
         void doLogin(String email, String password);
 
-        void doSignUp();
-
         void doFindPassword();
     }
-
 }

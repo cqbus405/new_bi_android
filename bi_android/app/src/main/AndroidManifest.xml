@@ -21,8 +21,8 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <!--LoginActivity-->
-        <activity android:name=".login.LoginActivity">
+        <!--EnterPageActivity-->
+        <activity android:name=".enterpage.EnterPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +30,23 @@
             </intent-filter>
         </activity>
 
+        <!--LoginActivity-->
+        <activity android:name=".login.LoginActivity"
+            android:parentActivityName=".enterpage.EnterPageActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".enterpage.EnterPageActivity" />
+        </activity>
+
         <!--SignUpActivity-->
-        <activity android:name=".singup.SignUpActivity" />
+        <activity android:name=".singup.SignUpActivity"
+            android:parentActivityName=".enterpage.EnterPageActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".enterpage.EnterPageActivity" />
+        </activity>
 
         <!-- CampaignsActivity -->
         <activity android:name=".campaigns.CampaignsActivity" />

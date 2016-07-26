@@ -61,6 +61,7 @@
 
 
     <string name="app_name">BI</string>
+    <string name="welcome">Welcome to BI</string>
 
     <string name="navigation_view_header_title">Boostinsider</string>
     <string name="campaigns_title">CAMPAIGNS</string>

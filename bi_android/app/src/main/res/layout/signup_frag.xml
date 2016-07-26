@@ -6,9 +6,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="128dp"
+        android:layout_height="136dp"
         android:src="@drawable/splash_label"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:layout_alignParentBottom="true" />
 
     <LinearLayout
@@ -19,20 +19,20 @@
         android:gravity="center"
         android:padding="@dimen/login_fragment_padding">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/bottom_margin" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textSize="22dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginBottom="@dimen/bottom_margin" />-->
 
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="@string/email"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/hint" />
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="@string/password"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:inputType="textPassword"
             android:textColorHint="@color/hint" />
 
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="@string/re_password"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:inputType="textPassword"
             android:textColorHint="@color/hint"
             android:layout_marginBottom="@dimen/bottom_margin" />
@@ -60,25 +60,24 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:text="@string/sign_up"
-            android:textSize="12sp"
             android:textColor="@android:color/white"
             android:background="@android:color/black"
             android:layout_marginBottom="@dimen/bottom_margin" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textSize="12sp"
-        android:textColor="@android:color/white"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/bottom_margin" />
+    <!--<Button-->
+        <!--android:id="@+id/loginButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:text="@string/login"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--style="?android:attr/borderlessButtonStyle"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="@dimen/bottom_margin" />-->
 
 
     <ProgressBar

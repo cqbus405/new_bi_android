@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.boostinsider.android.R;
-import com.boostinsider.android.login.LoginActivity;
+import com.boostinsider.android.campaigns.CampaignsActivity;
 import com.boostinsider.android.util.ToastUtils;
 
 /**
@@ -30,8 +30,6 @@ public class SignUpFragment extends Fragment implements SignUpContract.View {
 
     private Button mSignUpButton;
 
-    private Button mLogInButton;
-
     private ProgressBar mProgressBar;
 
     public static SignUpFragment newInstance() {
@@ -46,12 +44,6 @@ public class SignUpFragment extends Fragment implements SignUpContract.View {
     @Override
     public void setPresenter(SignUpContract.Presenter presenter) {
         mSignUpPresenter = presenter;
-    }
-
-    @Override
-    public void showLogin() {
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
@@ -87,7 +79,9 @@ public class SignUpFragment extends Fragment implements SignUpContract.View {
 
     @Override
     public void showCampaigns() {
-
+        Intent intent = new Intent(getActivity(), CampaignsActivity.class);
+        getActivity().startActivity(intent);
+        getActivity().finish();
     }
 
     @Nullable
@@ -108,14 +102,6 @@ public class SignUpFragment extends Fragment implements SignUpContract.View {
                 String rePassword = mRePasswordEditText.getText().toString();
 
                 mSignUpPresenter.doSignUp(email, password, rePassword);
-            }
-        });
-
-        mLogInButton = (Button) root.findViewById(R.id.loginButton);
-        mLogInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSignUpPresenter.backToLogin();
             }
         });
 

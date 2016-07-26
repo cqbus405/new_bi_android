@@ -36,11 +36,6 @@ public class SignUpPresenter implements SignUpContract.Presenter {
     }
 
     @Override
-    public void backToLogin() {
-        mSignUpView.showLogin();
-    }
-
-    @Override
     public void doSignUp(String email, String password, String rePassword) {
         if (isValidInput(email, password, rePassword)) {
             mSignUpView.showLoadingIndicator(true);

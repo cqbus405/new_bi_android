@@ -10,11 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.boostinsider.android.R;
 import com.boostinsider.android.campaigns.CampaignsActivity;
-import com.boostinsider.android.singup.SignUpActivity;
 import com.boostinsider.android.util.ToastUtils;
 
 /**
@@ -28,9 +26,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
 
     private EditText mPasswordEditText;
 
-    private TextView mForgotPasswordTextView;
-
-    private TextView mSignUpTextView;
+//    private TextView mForgotPasswordTextView;
 
     private Button mLoginButton;
 
@@ -65,12 +61,6 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     }
 
     @Override
-    public void showSignUp() {
-        Intent intent = new Intent(getContext(), SignUpActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
     public void showCampaigns() {
         Intent intent = new Intent(getActivity(), CampaignsActivity.class);
         getActivity().startActivity(intent);
@@ -85,21 +75,13 @@ public class LoginFragment extends Fragment implements LoginContract.View {
         mEmailEditText = (EditText) root.findViewById(R.id.emailEditText);
         mPasswordEditText = (EditText) root.findViewById(R.id.passwordEditText);
 
-        mForgotPasswordTextView = (TextView) root.findViewById(R.id.forgotPassword);
-        mForgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mLoginPresenter.doFindPassword();
-            }
-        });
-
-        mSignUpTextView = (TextView) root.findViewById(R.id.signUp);
-        mSignUpTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mLoginPresenter.doSignUp();
-            }
-        });
+//        mForgotPasswordTextView = (TextView) root.findViewById(R.id.forgotPassword);
+//        mForgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                mLoginPresenter.doFindPassword();
+//            }
+//        });
 
         //Set up login button.
         mLoginButton = (Button) root.findViewById(R.id.loginButton);

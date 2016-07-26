@@ -46,11 +46,6 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void doSignUp() {
-        mLoginView.showSignUp();
-    }
-
-    @Override
     public void doFindPassword() {
     }
 }
